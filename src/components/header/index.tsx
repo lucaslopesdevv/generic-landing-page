@@ -7,7 +7,7 @@ interface HeaderProps {
 }
 
 export const Header: React.FC<HeaderProps> = ({ 
-  title = 'Curso Pro', 
+  title = 'ProCode', 
   onMenuToggle, 
 }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
