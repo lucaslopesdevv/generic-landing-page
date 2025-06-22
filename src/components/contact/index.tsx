@@ -54,8 +54,8 @@ export const Contact: React.FC = () => {
             Get In Touch
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Have a question or want to work together? I'd love to hear from you. 
-            Send me a message and I'll respond as soon as possible.
+            Have a question or want to work together? I&apos;d love to hear from you. 
+            Send me a message and I&apos;ll respond as soon as possible.
           </p>
         </div>
 
@@ -113,7 +113,7 @@ export const Contact: React.FC = () => {
                   onChange={handleInputChange}
                   required
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition duration-200"
-                  placeholder="What's this about?"
+                  placeholder="What&apos;s this about?"
                 />
               </div>
 

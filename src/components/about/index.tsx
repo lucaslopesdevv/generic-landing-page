@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 interface TeamMember {
   name: string;
@@ -36,7 +37,7 @@ const About: React.FC = () => {
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h1 className="text-5xl font-bold mb-6">About Us</h1>
           <p className="text-xl leading-relaxed">
-            We're passionate about building innovative solutions that empower businesses and individuals to achieve their goals.
+            We&apos;re passionate about building innovative solutions that empower businesses and individuals to achieve their goals.
           </p>
         </div>
       </section>
@@ -91,7 +92,7 @@ const About: React.FC = () => {
             {teamMembers.map((member, index) => (
               <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow" >
                 <div className="h-82 overflow-hidden">
-                  <img src={member.image} alt={member.name} className="w-full h-full object-cover" />
+                  <Image src={member.image} alt={member.name} width={400} height={400} className="w-full h-full object-cover" />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-semibold text-gray-800 mb-2">{member.name}</h3>

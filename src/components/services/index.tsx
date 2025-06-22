@@ -94,7 +94,7 @@ export const Services: React.FC = () => {
               Ready to get started?
             </h3>
             <p className="text-gray-600 mb-6">
-              Let's discuss how we can help bring your vision to life.
+              Let&apos;s discuss how we can help bring your vision to life.
             </p>
             <button className="bg-gradient-to-r from-purple-600 to-violet-600 hover:from-purple-700 hover:to-violet-700 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-200 transform hover:scale-105">
               Get in Touch

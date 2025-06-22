@@ -1,5 +1,6 @@
 'use client'
 import React, { useState } from 'react';
+import Link from 'next/link';
 
 interface HeaderProps {
   title?: string;
@@ -27,7 +28,7 @@ export const Header: React.FC<HeaderProps> = ({
           
           <nav className={`absolute top-16 left-0 w-full text-text-primary bg-white shadow-lg md:relative md:top-0 md:shadow-none md:w-auto transition-all duration-300 ease-in-out ${isMenuOpen ? 'block' : 'hidden md:block'}`}>
             <ul className="flex flex-col md:flex-row md:items-center md:space-x-8 p-4 md:p-0">
-              <li className="py-2 md:py-0"><a href="/" className="text-text-primary hover:text-primary-600 px-3 py-2 rounded-md text-lg font-medium">Home</a></li>
+              <li className="py-2 md:py-0"><Link href="/" className="text-text-primary hover:text-primary-600 px-3 py-2 rounded-md text-lg font-medium">Home</Link></li>
               <li className="py-2 md:py-0"><a href="#about" className="text-text-primary hover:text-primary-600 px-3 py-2 rounded-md text-lg font-medium">About</a></li>
               <li className="py-2 md:py-0"><a href="#services" className="text-text-primary hover:text-primary-600 px-3 py-2 rounded-md text-lg font-medium">Services</a></li>
               <li className="py-2 md:py-0"><a href="#contact" className="text-text-primary hover:text-primary-600 px-3 py-2 rounded-md text-lg font-medium">Contact</a></li>
